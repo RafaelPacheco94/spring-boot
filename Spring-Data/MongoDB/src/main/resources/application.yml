@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      username: admin
+      password: admin
+      database: spring
+      port: 27017
+      host: 172.17.0.2 # docker inspect [container_name] | grep IPAddress
+      auto-index-creation: true
+
+server:
+  port: 8081
