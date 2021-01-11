@@ -48,3 +48,4 @@ Connect to the Docker container process by running:\
 // Create a new user on database
 > db.createUser({user: "admin",pwd: "secrectP@wd",roles: [ { role: "readWrite", db: "reporting" } ],mechanisms: [ "SCRAM-SHA-256" ]})
 ```
+
