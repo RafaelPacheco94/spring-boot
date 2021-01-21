@@ -1,0 +1,16 @@
+server:
+  port: 8089
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:29092
+    listener:
+      missing-topics-fatal: false
+
+consumer:
+  kafka:
+    stock:
+      topic-name-stock-list: stock-list
+      topic-name-stock: stock
+      topic-name-simple-message: simple-message
+      group-name: group-id

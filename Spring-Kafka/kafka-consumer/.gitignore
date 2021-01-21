@@ -1,0 +1,24 @@
+# Compiled Class Files
+/target
+*.class
+
+# Log Files
+*.log
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.tar.gz
+*.classpath
+*.settings
+*.project
+*.mvn
+*.iml
+
+# Intellij Extensions
+.idea
+
+# Project Files
+#*.yml
+#*.properties
