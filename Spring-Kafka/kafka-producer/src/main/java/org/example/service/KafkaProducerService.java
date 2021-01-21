@@ -1,7 +1,5 @@
 package org.example.service;
 
-import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.common.header.internals.RecordHeader;
 import org.example.model.Stock;
 import org.example.model.StockList;
 import org.slf4j.Logger;
@@ -12,9 +10,6 @@ import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 import org.springframework.util.concurrent.ListenableFutureCallback;
-
-import java.util.List;
-import java.util.Optional;
 
 @Service
 public class KafkaProducerService {
