@@ -1,6 +1,5 @@
-server:
-  port: 8081
-
-spring:
-  application:
-    name: entry-point
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

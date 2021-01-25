@@ -20,7 +20,7 @@ public class TraderSentimentsService {
                     @HystrixProperty(name = "circuitBreaker.errorThresholdPercentage", value = "80"),
                     @HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds", value = "5000")
             })    public TraderSentiments getTraderSentiments(String id) {
-        return restTemplate.getForObject("http://traders-sentiments-information/getTraderSentiments/" + id, TraderSentiments.class);
+        return restTemplate.getForObject("http://traders-sentiments/getTraderSentiments/" + id, TraderSentiments.class);
     }
 
     public TraderSentiments getTraderSentimentsFallbackMethod(String id) {

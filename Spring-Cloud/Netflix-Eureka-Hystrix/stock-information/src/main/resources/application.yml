@@ -1,6 +1,5 @@
-server:
-  port: 8084
-
-spring:
-  application:
-    name: stock-information
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
