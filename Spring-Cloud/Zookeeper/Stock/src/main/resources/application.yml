@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: stock
+  profiles:
+    active: dev
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      discovery:
+        enabled: true
